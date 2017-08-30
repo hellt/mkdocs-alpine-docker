@@ -3,6 +3,6 @@ FROM alpine
 RUN apk add --no-cache python3 && \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
-    pip install --upgrade pip setuptools && \
-    pip install mkdocs && \
+    pip3 install --upgrade pip setuptools && \
+    pip3 install mkdocs && \
     rm -r /root/.cache
